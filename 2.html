@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<p>
+	<span>Первый катет</span>
+	<input type="text" id="k1">
+</p>
+<p>
+	<span style="margin-right:4px;">Второй катет</span>
+	<input type="text" id="k2">
+</p>
+<input type="button" value="Ok" onclick="go()">
+<div id="pole"></div>
+<script>
+function go(){
+	var k1 = document.getElementById("k1").value;
+	var k2 = document.getElementById("k2").value;
+	var g = Math.sqrt(Math.pow(k1,2)+Math.pow(k2,2));
+	var pole = document.getElementById("pole").innerHTML='Гипотенуза = '+g;
+}
+</script>
+</body>
+</html>
