@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Кораблик Айдара</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="820" height="920">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+     
+	
+	cxt.lineWidth = 2;
+	cxt.moveTo(300,30);
+	cxt.stroke();  
+	cxt.lineTo(300,300);
+	cxt.lineTo(100,300);
+	cxt.lineTo(140,370);
+	cxt.lineTo(600,370);
+	cxt.lineTo(660,300);
+	cxt.lineTo(300,300);
+	cxt.fillStyle = '#9400D3';
+	cxt.fill();
+	
+
+	cxt.strokeRect(250,30,50,10);
+	cxt.stroke();
+
+	
+	cxt.beginPath();
+	cxt.fillStyle = 'blue';
+	cxt.strokeRect(250,40,50,10);
+	cxt.fillRect(250,40,50,10);
+	cxt.closePath();
+	cxt.fill();
+	
+	cxt.beginPath();
+	cxt.fillStyle = 'red';
+	cxt.strokeRect(250,50,50,10);
+	cxt.fillRect(250,50,50,10);
+	cxt.closePath();
+	cxt.fill();
+	
+	cxt.beginPath();
+	cxt.strokeStyle = 'black'; 
+	cxt.lineWidth = 2;	
+	cxt.fillStyle = '#00FFFF';
+	cxt.moveTo(300,80);
+	cxt.lineTo(130,280);
+	cxt.lineTo(300,280);
+	cxt.lineTo(300,80);
+	cxt.closePath();
+	cxt.stroke();
+	cxt.fill();
+	
+	cxt.beginPath();
+	cxt.fillStyle = '#00FFFF';
+	cxt.moveTo(300,80);
+	cxt.lineTo(660,300);
+	cxt.lineTo(400,250);
+	cxt.lineTo(300,80);
+	cxt.closePath();
+	cxt.fill();	
+
+	cxt.moveTo(400,250);
+	cxt.lineTo(300,300);
+	
+	
+	
+	
+	
+	cxt.strokeStyle = 'black'; 
+	cxt.lineWidth = 1;
+	cxt.stroke();
+
+  </script>
+ </head>
+ <body>
+</html>
